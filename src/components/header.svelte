@@ -6,7 +6,7 @@
 <style>
     div {
         width: 100vw;
-        background-color: gray;
+        background-color: var(--header-color);
     }
     h1 {
         color: gold;
