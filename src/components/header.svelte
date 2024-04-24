@@ -10,5 +10,6 @@
     }
     h1 {
         color: gold;
+        font-family: Integral;
     }
 </style>
