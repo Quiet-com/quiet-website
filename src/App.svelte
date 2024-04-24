@@ -20,15 +20,17 @@
     flex-direction: column;
     height: 100vh;
   }
+
   .scrolling {
   width: 100%;
   min-height: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   }
+
   .scrolling :global(section) {
     height: 100%;
-    background-color: #4B4B4F;
+    background-color: var(--gray);
     scroll-snap-align: start;
   }
 </style>

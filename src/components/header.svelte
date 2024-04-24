@@ -1,12 +1,12 @@
 
-<div>
+<main>
     <h1>Quiet.</h1>
-</div>
+</main>
 
 <style>
-    div {
+    main {
         width: 100vw;
-        background-color: var(--header-color);
+        background-color: var(--dark-gray);
     }
     h1 {
         color: gold;
