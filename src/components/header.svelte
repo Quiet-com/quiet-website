@@ -9,6 +9,7 @@
         background-color: var(--dark-gray);
     }
     h1 {
+        font-size: 27pt;
         color: gold;
         font-family: Integral;
     }
