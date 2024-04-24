@@ -22,14 +22,16 @@
   }
 
   .scrolling {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  min-height: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   }
 
   .scrolling :global(section) {
-    height: 100%;
+    min-height: 100%;
     background-color: var(--gray);
     scroll-snap-align: start;
   }
