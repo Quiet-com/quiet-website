@@ -12,7 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --header-color: #000000;
+  --dark-blue: #01203F;
+  --blue: #0344DC;
+  --orange: #FE5001;
+  --white: #f1F2F3;
+  --light-gray: #BABAC4;
+  --gray: #4B4B4F;
+  --dark-gray: #333333;
 }
 
 body {
