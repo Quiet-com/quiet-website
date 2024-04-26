@@ -1,11 +1,11 @@
 <script>
-
+    import getAsset from "../util/assets.js"
 </script>
 
 <section>
 
     <button>START</button>
-    <img src="https://quiet-com.github.io/quiet-assets/bølger.png" alt="Bølger">
+    <img src={getAsset("bølger.png")} alt="Bølger">
     
 </section>
 
