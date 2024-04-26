@@ -12,6 +12,8 @@
 <style>
     img {
         width: 100vw;
+        position: relative;
+        top: -25%;
     }
     button {
         z-index: 1;
@@ -26,9 +28,11 @@
         font-family: Integral;
     }
     section {
+        height: cover;
         justify-content: center;
         align-items: center;
         background-color: white !important;
+        overflow: hidden;
     }
 
 </style>
