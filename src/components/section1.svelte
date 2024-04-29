@@ -1,16 +1,21 @@
 <script>
     import getAsset from "../util/assets.js"
-</script>
+    
+    export let demoSection
+    
+    function clickf(){
+        demoSection.scrollIntoView({behavior: "smooth"})
+    }
 
+</script>
+xw
 <section>
-    <button>START</button>
+    <button class="startBtn" on:click={clickf}>START</button>
 </section>
 
 <style>
-    button {
+    .startBtn {
         margin: 0;
-        position: absolute;
-        top: 50%;
         padding: 0em 0.4em 0.2em 0.4em;
         font-size: 5em;
         border: white solid;
@@ -19,10 +24,11 @@
         font-family: Integral;
     }
     section {
-        z-index: -1;
+        display: flex;
         height: cover;
         justify-content: center;
-        align-items: flex-end;
+
+        align-items: center;
         background-color: white !important;
         overflow: hidden;
         background-image: url("https://quiet-com.github.io/quiet-assets/bølger.png");

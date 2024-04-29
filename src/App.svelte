@@ -2,14 +2,15 @@
   import Header from "./components/header.svelte";
   import Section1 from "./components/section1.svelte";
   import Section2 from "./components/section2.svelte";
-  
+
+  let demoSection
 </script>
 
 <main>
   <Header></Header>
   <article class="scrolling">
-    <Section1></Section1>
-    <Section2></Section2>
+    <Section1 bind:demoSection/>
+    <Section2 bind:demoSection/>
   </article>
 </main>
 

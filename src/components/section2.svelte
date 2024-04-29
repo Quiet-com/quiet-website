@@ -1,8 +1,8 @@
 <script>
-
+    export let demoSection
 </script>
 
-<section>
+<section bind:this={demoSection}>
     <h2>
         sect2
     </h2>
