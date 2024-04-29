@@ -34,7 +34,7 @@
   .scrolling :global(section) {
     display: flex;
     flex-wrap: wrap;
-    min-height: 100%;
+    min-height: 105%;
     background-color: var(--gray);
     scroll-snap-align: start;
   }
