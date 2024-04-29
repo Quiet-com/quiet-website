@@ -22,6 +22,8 @@
         border-radius: 20px;
         background-color: transparent;
         font-family: Integral;
+        position: fixed;
+        z-index: 0;
     }
     .startBtn:hover {
         cursor: pointer;

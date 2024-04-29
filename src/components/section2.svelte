@@ -9,5 +9,7 @@
 </section>
 
 <style>
-    
+    section {
+        z-index: 1;
+    }
 </style>
