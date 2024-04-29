@@ -8,7 +8,6 @@
     }
 
 </script>
-xw
 <section>
     <button class="startBtn" on:click={click}>START</button>
 </section>
