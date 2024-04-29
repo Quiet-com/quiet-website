@@ -1,10 +1,14 @@
-<script>
+<script lang="ts">
     import getAsset from "../util/assets.js"
+    function scroll() {
+        console.log("scrolled")
+
+    }
 </script>
 
 <section>
 
-    <button>START</button>
+    <button on:click={(event) => scroll()} id=start-button>START</button>
     <img src={getAsset("bølger.png")} alt="Bølger">
     
 </section>
@@ -26,6 +30,9 @@
         border-radius: 20px;
         background-color: transparent;
         font-family: Integral;
+    }
+    button:hover {
+        cursor: pointer;
     }
     section {
         height: cover;
