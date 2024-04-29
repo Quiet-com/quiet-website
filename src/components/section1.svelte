@@ -33,7 +33,7 @@
         align-items: center;
         background-color: white !important;
         overflow: hidden;
-        background-image: url("https://quiet-com.github.io/quiet-assets/bølger2.png");
+        background-image: url("https://quiet-com.github.io/quiet-assets/waves.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center; 
