@@ -32,7 +32,7 @@
         align-items: flex-end;
         background-color: white !important;
         overflow: hidden;
-        background-image: url("https://quiet-com.github.io/quiet-assets/bølger.png");
+        background-image: url("https://quiet-com.github.io/quiet-assets/bølger2.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center; 
