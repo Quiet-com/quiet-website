@@ -1,30 +1,32 @@
 <script lang="ts">
     import getAsset from "../util/assets.js"
-    
-    export let demoSection
-    
+
+    export let demoSection;
+    export let articleRef;
+
     function click(){
+        articleRef.style.overflowY = 'scroll';
         demoSection.scrollIntoView({behavior: "smooth"})
     }
-
 </script>
 <section>
-    <button class="startBtn" on:click={click}>START</button>
+    <button class="startBtn" on:click={click}>VIEW PRODUCT</button>
 </section>
 
 <style>
     .startBtn {
         margin: 0;
         padding: 0em 0.4em 0.2em 0.4em;
-        font-size: 5em;
-        border: white solid;
+        font-size: 3.7em;
+        border: gray solid;
         border-radius: 20px;
         background-color: transparent;
         font-family: Integral;
     }
-    button:hover {
+    .startBtn:hover {
         cursor: pointer;
     }
+
     section {
         display: flex;
         height: cover;
@@ -34,8 +36,10 @@
         background-color: white !important;
         overflow: hidden;
         background-image: url("https://quiet-com.github.io/quiet-assets/waves.png");
+        background-size: 100%;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center; 
     }
+
 </style>

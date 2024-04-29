@@ -3,13 +3,14 @@
   import Section1 from "./components/section1.svelte";
   import Section2 from "./components/section2.svelte";
 
+  let articleRef
   let demoSection
 </script>
 
 <main>
   <Header></Header>
-  <article class="scrolling">
-    <Section1 bind:demoSection/>
+  <article class="scrolling" bind:this={articleRef}>
+    <Section1 {articleRef} bind:demoSection/>
     <Section2 bind:demoSection/>
   </article>
 </main>
@@ -23,12 +24,12 @@
   }
 
   .scrolling {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
   }
 
   .scrolling :global(section) {
