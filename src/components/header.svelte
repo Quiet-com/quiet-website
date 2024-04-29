@@ -1,9 +1,15 @@
 
 <main>
-    <img id="logo" src="https://quiet-com.github.io/quiet-assets/SVG/QuietLogoIconWhite.svg" width=40vw alt="Loggos">
-    <h1>Quiet.</h1>
+    <img id="logo" src="https://quiet-com.github.io/quiet-assets/SVG/QuietLogoIconWhite.svg" width=40vw alt="Loggos" on:click={reload}>
+    <h1 on:click={reload}>Quiet.</h1>
     <img id = "hamburger" src = "https://quiet-com.github.io/quiet-assets/Hamburger.png" alt = "Namnam Hamburger">
 </main>
+
+<script>
+    function reload(){
+        window.location.href = 'index.html';
+    }
+</script>
 
 <style>
     main {
@@ -21,6 +27,10 @@
         color: #F1F2F3;
         font-family: Integral;
         margin-left:3px;
+    }
+
+    h1:hover,#logo:hover {
+        cursor: pointer;
     }
 
     #logo {
