@@ -20,12 +20,14 @@
     }
     .textbox {
         width: 50%;
+        transform: translateX(-210%);
     }
     h1 {
         font-size: 3rem;
     }
     model-viewer {
+        transform: translateX(-33.4%);
         height: 100%;
-        width: 50%;
+        width: 150%;
     }
 </style>
