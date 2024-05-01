@@ -1,7 +1,11 @@
 
 <main>
-    <img id="logo" src="https://quiet-com.github.io/quiet-assets/SVG/QuietLogoIconWhite.svg" width=40vw alt="Loggos" on:click={reload}>
-    <h1 on:click={reload}>Quiet.</h1>
+    <button style="all:unset;" on:click={reload}>
+        <img src="https://quiet-com.github.io/quiet-assets/SVG/QuietLogoIconWhite.svg" width=40vw id="logo" alt="Loggos">
+    </button>
+    <button style="all:unset;" on:click={reload}>
+        <h1>Quiet.</h1>
+    </button>
     <div>
         <img id = "hamburger" src = "https://quiet-com.github.io/quiet-assets/Hamburger.png" alt = "Namnam Hamburger">
     </div>
@@ -23,12 +27,13 @@
         height: 95px;
     }
     h1 {
-        align-self:center;
+        align-self:center; 
         display: flex;
         font-size: 27pt;
         color: #F1F2F3;
         font-family: Integral;
         margin-left:3px;
+        transform: translateY(-7%);
     }
 
     h1:hover,#logo:hover {
