@@ -11,6 +11,10 @@
 </script>
 <section>
     <button class="startBtn" on:click={click}>VIEW PRODUCT</button>
+    <div>
+        <p>CONTACT</p>
+        <p>ABOUT US</p>
+    </div>
 </section>
 
 <style>
@@ -44,4 +48,15 @@
         background-position: center; 
     }
 
+    div {
+        flex-grow:1;
+        height:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-family: Integral;
+        font-size: 1.75em;
+    }
 </style>
