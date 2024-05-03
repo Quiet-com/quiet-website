@@ -21,7 +21,7 @@
     .startBtn {
         margin: 0;
         padding: 0em 0.4em 0.2em 0.4em;
-        font-size: 3.7em;
+        font-size: 3.7vw;
         border: gray solid;
         border-radius: 20px;
         background-color: transparent;
@@ -45,7 +45,7 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center; 
+        background-position: center top; 
     }
 
     div {

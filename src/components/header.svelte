@@ -52,9 +52,9 @@
         width: 100vw;
     }
     #hamburger {
-        display: flex;
-        align-self: center;
-        position: relative;
+       display: flex;
+       align-self: center;
+       position: relative;
        justify-self: flex-end;
        right: 30px;
 }
