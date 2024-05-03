@@ -1,56 +1,41 @@
+<script>
+</script>
 
 <main>
-    <button style="all:unset;" on:click={reload}>
+    <a href=".">
         <img src="https://quiet-com.github.io/quiet-assets/SVG/QuietLogoIconWhite.svg" width=40vw id="logo" alt="Loggos">
-    </button>
-    <button style="all:unset;" on:click={reload}>
+    </a>
+    <a href=".">
         <h1>Quiet.</h1>
-    </button>
-    <div>
-        <img id = "hamburger" src = "https://quiet-com.github.io/quiet-assets/Hamburger.png" alt = "Namnam Hamburger">
-    </div>
+    </a>
+    <img id = "hamburger" src = "https://quiet-com.github.io/quiet-assets/Hamburger.png" alt = "Namnam Hamburger">
     
 </main>
 
-<script>
-    function reload(){
-        window.location.href = 'index.html';
-    }
-</script>
-
 <style>
+    a {
+        margin: 0;
+        text-decoration: none;
+    }
     main {
         display: flex;
-        width: 100vw;
+        max-width: 100vw;
         background-color: var(--dark-gray);
-        flex-grow:1;
         height: 95px;
-    }
+        padding: 0 3vw;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        }
     h1 {
-        align-self:center; 
+        align-self: center; 
         display: flex;
-        font-size: 27pt;
+        font-size: 2.3rem;
         color: #F1F2F3;
         font-family: Integral;
-        margin-left:3px;
-        transform: translateY(-7%);
+        margin: 0;
     }
 
-    h1:hover,#logo:hover {
-        cursor: pointer;
-    }
-
-    #logo {
-        margin-left:12px;
-        padding-top:10px;
-        padding-right: 5px;
-        align-self: center;
-    }
-
-    div {
-        display: grid;
-        width: 100vw;
-    }
     #hamburger {
        display: flex;
        align-self: center;
