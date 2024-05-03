@@ -44,8 +44,6 @@
         background-image: var(--bg-url);
         background-size: 100%;
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center top; 
     }
 
     div {
