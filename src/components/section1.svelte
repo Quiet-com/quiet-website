@@ -9,7 +9,7 @@
         demoSection.scrollIntoView({behavior: "smooth"})
     }
 </script>
-<section style="--bg-url: url({getAsset("waves.png")})">
+<section>
     <button class="startBtn" on:click={click}>VIEW PRODUCT</button>
     <div>
         <p>CONTACT</p>
@@ -37,10 +37,11 @@
         display: flex;
         height: cover;
         justify-content: center;
+
         align-items: center;
         background-color: white !important;
         overflow: hidden;
-        background-image: var(--bg-url);
+        background-image: url("https://quiet-com.github.io/quiet-assets/waves.png");
         background-size: 100%;
         background-repeat: no-repeat;
         background-attachment: fixed;
