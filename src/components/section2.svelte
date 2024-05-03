@@ -47,9 +47,28 @@
         background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
         box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
     }
+    
     .button:hover {
         background-position: 100% 0;
         transition: all .4s ease-in-out;
+    }
+
+    @media screen and (max-width: 700px) {
+        section {
+            flex-direction: row;
+            justify-content: center;
+        }
+        model-viewer {
+            height: 50%;
+        }
+        .textbox {
+            height: 50%;
+            width: 100%;
+            padding: 0 5% 0 5%;
+        }
+        h1 {
+            margin: 0;
+        }
     }
 
 </style>
