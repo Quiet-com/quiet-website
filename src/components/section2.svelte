@@ -18,20 +18,20 @@
 
 <style>
     section {
+        display: flex;
         z-index: 1;
         flex-direction: column;
     }
     .textbox {
-        width: 50%;
-        transform: translateX(-210%);
+        width: 45%;
+        padding: 0 5% 0 2%;
     }
     h1 {
         font-size: 3rem;
     }
     model-viewer {
-        transform: translateX(-33.4%);
         height: 100%;
-        width: 150%;
+        width: 50%;
     }
     .button {
         width: 40%;
