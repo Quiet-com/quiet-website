@@ -10,49 +10,36 @@
     }
 </script>
 <section style="--bg-url: url({getAsset("waves.png")})">
-    <h1>
-        Unlock your concentration with Quiet.
-    </h1>
-    <div class="row">
-        <div class="rowitems">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet tellus cras adipiscing enim eu turpis. Velit laoreet id donec ultrices tincidunt arcu non.</p>
-            <button class="button" on:click={click}>
-                SEE MORE
-            </button>
-        </div>
-        <div class="rowitems itm2">
-            <model-viewer disable-tap camera-orbit="-155deg 55deg" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" src="{getAsset("3D/controller.glb")}"></model-viewer>
-        </div>
-        <div class="rowitems">
-            <p>jk</p>
-        </div>
+    <div class="text">
+        <h1>
+            Unlock your concentration with Quiet.
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet tellus cras adipiscing enim eu turpis. Velit laoreet id donec ultrices tincidunt arcu non.</p>
+        <button class="button" on:click={click}>
+            SEE MORE
+        </button>
     </div>
+    <model-viewer disable-tap camera-orbit="-155deg 55deg" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" src="{getAsset("3D/controller.glb")}"></model-viewer>
 </section>
 
 <style>
     h1 {
         font-size: 4cqw;
         font-family: Integral;
+        margin: 0;
     }
     p {
         font-size: 1em;
     }
-    .row {
+    .text {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 100%;
-        flex-grow: 1;
-        margin: 0 5% 0;
-    }
-    .rowitems {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-grow: 1;
         flex-direction: column;
-        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
         height: 100%;
+        margin: 0 3% 0;
+        width: 50%;
+        text-align: start;
     }
 
     .button {
@@ -76,17 +63,18 @@
     }
 
     model-viewer {
-        height: 70%;
-        width: 140%;
-        transform: translateY(-20%);
+        width: 40%;
+        height: 100%;
     }
 
     section {
         display: flex;
         height: cover;
-        justify-content: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
 
-        align-items: flex-start;
         background-color: white;
         overflow: hidden;
         background-size: 100%;
