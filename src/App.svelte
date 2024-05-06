@@ -2,6 +2,7 @@
   import Header from "./components/header.svelte";
   import Section1 from "./components/section1.svelte";
   import Section2 from "./components/section2.svelte";
+  import Section3 from "./components/section3.svelte";
 
   let articleRef
   let demoSection
@@ -12,6 +13,7 @@
   <article class="scrolling" bind:this={articleRef}>
     <Section1 {articleRef} bind:demoSection/>
     <Section2 bind:demoSection/>
+    <Section3/>
   </article>
 </main>
 
