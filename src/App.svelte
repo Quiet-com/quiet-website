@@ -39,6 +39,7 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 100%;
+    padding: 0 2%;
     background-color: var(--gray);
     scroll-snap-align: start;
   }
