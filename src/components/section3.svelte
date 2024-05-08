@@ -1,8 +1,8 @@
 <script>
-
+    export let purchaseSection;
 </script>
 
-<section>
+<section bind:this={purchaseSection}>
 
 </section>
 
