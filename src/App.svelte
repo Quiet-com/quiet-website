@@ -2,8 +2,9 @@
   import Header from "./components/header.svelte";
   import Section1 from "./components/section1.svelte";
   import Section2 from "./components/section2.svelte";
+  // @ts-ignore
   import Section3 from "./components/section3.svelte";
-
+  
   let articleRef
   let demoSection
   let purchaseSection
