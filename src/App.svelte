@@ -6,14 +6,15 @@
 
   let articleRef
   let demoSection
+  let purchaseSection
 </script>
 
 <main>
   <Header></Header>
   <article class="scrolling" bind:this={articleRef}>
     <Section1 {articleRef} bind:demoSection/>
-    <Section2 bind:demoSection/>
-    <Section3/>
+    <Section2 bind:demoSection {purchaseSection}/>
+    <Section3 bind:purchaseSection/>
   </article>
 </main>
 

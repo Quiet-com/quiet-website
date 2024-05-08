@@ -1,5 +1,6 @@
 <script>
     export let demoSection;
+    export let purchaseSection;
     import '@google/model-viewer';
     import getAsset from '../util/assets';
 </script>
@@ -9,7 +10,7 @@
     <div class="textbox">
         <h1>Meet Quiet.</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non luctus arcu. Maecenas quam tellus, bibendum eget magna at, eleifend vulputate erat. Cras pharetra volutpat odio et mattis. Pellentesque diam neque, mollis vitae neque vel, sagittis cursus sapien.</p>
-        <button class="button">
+        <button class="button" on:click={purchaseSection.scrollIntoView({behavior: "smooth"})}>
             BUY NOW
         </button>
     </div>
