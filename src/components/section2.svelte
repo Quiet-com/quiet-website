@@ -22,13 +22,20 @@
         display: flex;
         z-index: 1;
         flex-direction: column;
+        justify-content: center;
     }
     .textbox {
         width: 45%;
         padding: 0 5% 0 2%;
+        text-align: left;
     }
     h1 {
         font-size: 3rem;
+        margin: 0;
+        line-height: 1em;
+    }
+    p {
+        margin: 5% 0 5% 0;
     }
     model-viewer {
         height: 100%;
