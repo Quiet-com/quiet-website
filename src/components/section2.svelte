@@ -39,9 +39,8 @@
         font-weight: 600;
         cursor: pointer;
         height: 2.2em;
-        
+        border-radius: 0.4em;
         border: none;
-        border-radius: 1.1em;
         transition: all .4s ease-in-out;
         background-size: 300% 100%;
         background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);

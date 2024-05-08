@@ -43,18 +43,18 @@
     }
 
     .button {
-        width: 70%;
         font-size: 1.3em;
         font-weight: 600;
+        padding: 0 1.5em;
         cursor: pointer;
         height: 2.2em;
         margin: 5% 0 5%;
         border: none;
-        border-radius: 1.1em;
+        border-radius: 0.4em;
         transition: all .4s ease-in-out;
         background-size: 300% 100%;
-        background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
-        box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+        background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
     }
     
     .button:hover {
