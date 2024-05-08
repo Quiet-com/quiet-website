@@ -32,7 +32,6 @@
     }
 
     function slideImage() {
-    console.log("Image slided", imgId)
     const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
     const showcase = document.querySelector('.img-showcase') as HTMLElement;
     showcase.style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
