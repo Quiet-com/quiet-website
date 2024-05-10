@@ -8,8 +8,8 @@
     let imgId = 1;
 
     onMount(() => {
-    const buttons = document.querySelectorAll('.img-select button');
-    const imgBtns = [...buttons];
+        const buttons = document.querySelectorAll('.img-select button');
+        const imgBtns = [...buttons];
 
     imgBtns.forEach((button) => {
         button.addEventListener('click', handleClick);
@@ -18,23 +18,23 @@
     window.addEventListener('resize', slideImage);
 
     return () => {
-        imgBtns.forEach((button) => {
-        button.removeEventListener('click', handleClick);
-        });
-        window.removeEventListener('resize', slideImage);
-    };
+            imgBtns.forEach((button) => {
+            button.removeEventListener('click', handleClick);
+            });
+            window.removeEventListener('resize', slideImage);
+        };
     });
 
     function handleClick(event: MouseEvent) {
-    const button = event.target as HTMLElement;
-    imgId = parseInt(button.dataset.id)
-    slideImage();
+        const button = event.target as HTMLElement;
+        imgId = parseInt(button.dataset.id)
+        slideImage();
     }
 
     function slideImage() {
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-    const showcase = document.querySelector('.img-showcase') as HTMLElement;
-    showcase.style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+        const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+        const showcase = document.querySelector('.img-showcase') as HTMLElement;
+        showcase.style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
     }
 </script>
 
@@ -93,11 +93,13 @@
     .card_wrapper {
         max-width: 1100px;
         margin: 0 auto;
-        transform: translateX(2.5%);
+
     }
+
     img {
         width: 100%;
         display: block;
+        -webkit-user-drag: none;
     }
 
     .img-display {
@@ -114,6 +116,7 @@
         min-width: 100%;
     }
     .img-select {
+        user-select: none;
         display: flex;
     }
     .img-item {
@@ -146,6 +149,7 @@
             grid-gap: 1.5rem;
         }
         .card_wrapper {
+            transform: translateX(2.5%);
             height: 100vh;
             display: flex;
             justify-content: center;
