@@ -8,7 +8,9 @@
     <a href=".">
         <h1>Quiet.</h1>
     </a>
-    <img id = "hamburger" src = "https://quiet-com.github.io/quiet-assets/Hamburger.png" alt = "Namnam Hamburger">
+    <button class="menu">
+        <img src="https://quiet-com.github.io/quiet-assets/Hamburger.png" alt="Namnam Hamburger">
+    </button>
     
 </main>
 
@@ -21,26 +23,33 @@
         display: flex;
         max-width: 100vw;
         background-color: var(--dark-gray);
-        height: 95px;
+        height: 64px;
         padding: 0 3vw;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
+
         }
     h1 {
         align-self: center; 
         display: flex;
-        font-size: 2.3rem;
+        font-size: 1.5rem;
         color: #F1F2F3;
         font-family: Integral;
-        margin: 0;
+        margin: -0.2em 0 0 0;
     }
 
-    #hamburger {
+    .menu img {
        display: flex;
        align-self: center;
        position: relative;
        justify-self: flex-end;
        right: 30px;
-}
+    }
+    
+    .menu {
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
 </style>
