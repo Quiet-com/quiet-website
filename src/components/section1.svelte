@@ -78,10 +78,10 @@
         font-size: 1em;
         font-weight: 600;
         padding: 0em 1em;
-        height: 3.2rem;
+        height: 3.15rem;
         width: 13em;
         margin: 0 1.3em 0 0;
-        border: none;
+        border: black solid 0.15em;
         border-radius: 0.4em;
         transition: all .4s ease-in-out;
         background-color: var(--dark-gray);
