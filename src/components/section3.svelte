@@ -7,17 +7,17 @@
 
     let imgId = 1;
 
-    onMount(() => {
+    onMount(() => { // Kjøres når slideshowet vises på nettsiden
         const buttons = document.querySelectorAll('.img-select button');
-        const imgBtns = [...buttons];
+        const imgBtns = [...buttons]; // Lager en liste over alle knapper
 
-    imgBtns.forEach((button) => {
-        button.addEventListener('click', handleClick);
-    });
+        imgBtns.forEach((button) => {
+            button.addEventListener('click', handleClick); // Legger til event listeners
+        });
 
-    window.addEventListener('resize', slideImage);
+        window.addEventListener('resize', slideImage);
 
-    return () => {
+        return () => { // Rydder opp event listeners når slideshowet ikke vises på skjermen
             imgBtns.forEach((button) => {
             button.removeEventListener('click', handleClick);
             });
@@ -27,15 +27,16 @@
 
     function handleClick(event: MouseEvent) {
         const button = event.target as HTMLElement;
-        imgId = parseInt(button.dataset.id)
+        imgId = parseInt(button.dataset.id) // Tar imgId-en fra data-id attributen
         slideImage();
     }
 
     function slideImage() {
-        const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-        const showcase = document.querySelector('.img-showcase') as HTMLElement;
-        showcase.style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+        const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth; // Regner ut bredden til bildet
+        const showcase = document.querySelector('.img-showcase') as HTMLElement; 
+        showcase.style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`; // Flytter bilderemsen lenger ut slik at riktig bilde blir rammet inn
     }
+
 </script>
 
 <section bind:this={purchaseSection}>
@@ -142,6 +143,10 @@
         margin: 1rem 0;
     }
 
+    button {
+        all: unset;
+    }
+
     @media screen and (min-width: 992px){
         .card {
             display: grid;
@@ -165,9 +170,4 @@
         }
     }
 
-    button {
-        all: unset;
-    }
-
 </style>
-

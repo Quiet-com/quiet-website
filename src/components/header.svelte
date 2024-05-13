@@ -40,6 +40,7 @@
     }
 
     .menu img {
+       transform: translateY(-50%);
        display: flex;
        align-self: center;
        position: relative;
@@ -48,6 +49,7 @@
     }
     
     .menu {
+        transform: translateY(50%);
         border: none;
         cursor: pointer;
         background-color: transparent;
