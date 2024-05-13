@@ -86,13 +86,14 @@
 
 <style>
     section {
+        max-height: 0px;
         display: flex;
         flex-direction: column;
         height:cover;
         z-index: 2;
     }
     .card_wrapper {
-        max-width: 1100px;
+        max-width: 900px;
         margin: 0 auto;
 
     }
@@ -101,10 +102,13 @@
         width: 100%;
         display: block;
         -webkit-user-drag: none;
+        transform: translateX(0.234%);
     }
 
     .img-display {
         overflow: hidden;
+        max-height: 57.5vh;
+        max-width: 57.5vh;
     }
 
     .img-showcase {
@@ -117,6 +121,8 @@
         min-width: 100%;
     }
     .img-select {
+        max-height: 57.5vh;
+        max-width: 57.5vh;
         user-select: none;
         display: flex;
     }
@@ -148,12 +154,18 @@
     }
 
     @media screen and (min-width: 992px){
+        img {
+            transform: translateX(0%);
+        }
+
         .card {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 1.5rem;
         }
         .card_wrapper {
+            max-height: 100vh;
+            max-width: 1100px;
             transform: translateX(2.5%);
             height: 100vh;
             display: flex;
