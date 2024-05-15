@@ -4,8 +4,7 @@
   import Section2 from "./components/section2.svelte";
   // @ts-ignore
   import Section3 from "./components/section3.svelte";
-  import Section4 from "./components/section4.svelte";
-  
+
   let articleRef
   let demoSection
   let purchaseSection
@@ -16,8 +15,7 @@
   <article class="scrolling" bind:this={articleRef}>
     <Section1 {articleRef} bind:demoSection/>
     <Section2 bind:demoSection {purchaseSection}/>
-    <Section4/>
-    <Section3 bind:purchaseSection/>
+    <Section3/>
   </article>
 </main>
 

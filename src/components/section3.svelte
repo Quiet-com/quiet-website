@@ -1,10 +1,6 @@
-
 <script lang="ts">
+    import getAsset from "../util/assets";
     import { onMount } from 'svelte';
-
-    export let purchaseSection;
-    import getAsset from '../util/assets';
-
     let imgId = 1;
 
     onMount(() => { // Kjøres når slideshowet vises på nettsiden
@@ -39,67 +35,109 @@
 
 </script>
 
-<section bind:this={purchaseSection}>
-    <div class="card_wrapper">
-        <div class="card">
-            <div class="product-imgs">
-                <div class="img-display">
-                    <div class="img-showcase">
-                        <img src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-1.png" alt="Bilde 1">
-                        <img src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-2.png" alt="Bilde 2">
-                        <img src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-3.png" alt="Bilde 3">
-                        <img src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-4.png" alt="Bilde 4">
+<section>
+    <div>
+        <div class="card_wrapper">
+            <div class="card">
+                <div class="product-imgs">
+                    <div class="img-display">
+                        <div class="img-showcase">
+                            <img src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-1.png" alt="Bilde 1">
+                            <img src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-2.png" alt="Bilde 2">
+                            <img src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-3.png" alt="Bilde 3">
+                            <img src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-4.png" alt="Bilde 4">
+                        </div>
+                    </div>
+                    <div class="img-select">
+                        <div class="img-item">
+                            <button> 
+                                <img data-id=1 src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-1.png" alt="Bilde 1">
+                            </button>
+                        </div>
+                        <div class="img-item">
+                            <button> 
+                                <img data-id=2 src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-2.png" alt="Bilde 2">
+                            </button>
+                        </div>
+                        <div class="img-item">
+                            <button> 
+                                <img data-id=3 src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-3.png" alt="Bilde 3">
+                            </button>
+                        </div>
+                        <div class="img-item">
+                            <button> 
+                                <img data-id=4 src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-4.png" alt="Bilde 4">
+                            </button>
+                        </div>
+                        <div>
+        
                     </div>
                 </div>
-                <div class="img-select">
-                    <div class="img-item">
-                        <button> 
-                            <img data-id=1 src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-1.png" alt="Bilde 1">
-                        </button>
-                    </div>
-                    <div class="img-item">
-                        <button> 
-                            <img data-id=2 src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-2.png" alt="Bilde 2">
-                        </button>
-                    </div>
-                    <div class="img-item">
-                        <button> 
-                            <img data-id=3 src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-3.png" alt="Bilde 3">
-                        </button>
-                    </div>
-                    <div class="img-item">
-                        <button> 
-                            <img data-id=4 src="https://quiet-com.github.io/quiet-assets/Produktbilder/produkt-thumbnail-4.png" alt="Bilde 4">
-                        </button>
-                    </div>
-                    <div>
     
+            </div>
+    </div>
+
+        <div class="functionlist">
+            <h1>
+                FUNCTIONS
+            </h1>
+            <div class="point">
+                <img class="icon" src="{getAsset("icons/plus.png")}" alt="plus icon">
+                <div>
+                    <h3>Volume +</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu massa ex. Nulla efficitur neque at turpis imperdiet aliquam. Integer ultricies lorem nec tristique dictum. Donec in posuere velit, eget lobortis lectus.</p>
                 </div>
             </div>
-
-        </div>
-        <div class="product_content">
-            <h2 class="product-title">QUIET.</h2>
+            <div class="point">
+                <img class = "icon" src="{getAsset("icons/minus.png")}" alt="plus icon">
+                <div>
+                    <h3>Volume -</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu massa ex. Nulla efficitur neque at turpis imperdiet aliquam. Integer ultricies lorem nec tristique dictum. Donec in posuere velit, eget lobortis lectus.</p>
+                </div>
+            </div>
+            <div class="point">
+                <img class = "icon" src="{getAsset("icons/mute.png")}" alt="plus icon">
+                <div>
+                    <h3>Mute</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu massa ex. Nulla efficitur neque at turpis imperdiet aliquam. Integer ultricies lorem nec tristique dictum. Donec in posuere velit, eget lobortis lectus.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <style>
+    .icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .product-imgs {
+        max-height: 80vh;
+    }
+
     section {
-        max-height: 0px;
         display: flex;
         flex-direction: column;
         height:cover;
         z-index: 2;
     }
     .card_wrapper {
+        max-height: 50vh;
         max-width: 900px;
         margin: 0 auto;
-
+        height: 100%;
+        width: 100%;
+        display: flex;
+        height: cover;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-top: -10vh;
     }
 
     img {
-        width: 100%;
+        width: 15vh !important;
         display: block;
         -webkit-user-drag: none;
         transform: translateX(0.234%);
@@ -121,13 +159,16 @@
         min-width: 100%;
     }
     .img-select {
-        max-height: 57.5vh;
-        max-width: 57.5vh;
+        max-height: 2.5vh;
+        width: 0;
         user-select: none;
         display: flex;
+   
     }
     .img-item {
         margin: 0.3rem;
+        justify-self: center;
+        transform: translateX(-20%);
     }
     .img-item:nth-child(1),
     .img-item:nth-child(2),
@@ -138,22 +179,15 @@
     .img-item:hover {
         opacity: 0.8;
     }
-    
-    .product_content {
-        padding: 2rem 1rem;
-    }
-
-    .product-title {
-        font-size: 3rem;
-        text-transform: capitalize;
-        margin: 1rem 0;
-    }
 
     button {
         all: unset;
+        display: flex;
+        height: 15vh !important;
+        width: 90%;
     }
 
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 860px){
         img {
             transform: translateX(0%);
         }
@@ -177,9 +211,77 @@
             flex-direction: column;
             justify-content: center;
         }
-        .product_content {
-            padding-top: 0;
-        }
     }
 
+    .functionlist {
+        font-size: 1rem;
+    }
+    .functionlist h1 {
+        font-size: 3em;
+        margin: 0 0 0.5em;
+    }
+    .point {
+        display: flex;
+        align-items: flex-start;
+        font-size: 2em;
+    }
+    .point img {
+        width: 1em;
+        height: 1em;
+        margin-right: 0.7em;
+    }
+    .point h3 {
+        font-size: 0.7em;
+        font-weight: 800;
+        margin: 0;
+        line-height: 1em;
+    }
+    .point div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .point p {
+        font-size: 0.4em;
+    }
+    .functionlist {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 40%;
+    }
+
+    img {
+        width: 20%;
+    }
+    @media screen and (max-width: 860px) {
+        div {
+            transform: translateY(10%);
+        }
+
+        .functionlist {
+        font-size: 0.95rem;
+        }
+        .img-display {
+            max-height:25vh;
+            max-width:25vh;
+        }
+        .img-select {
+            flex-grow: 1;
+        }
+        button img {
+            max-height:10vh;
+            max-width:10vh;
+            justify-self: center;
+        }
+    }
+    @media screen and (max-width: 760px) {
+
+        .functionlist {
+            width: 100%;
+        }
+        .functionlist h1 {
+            font-size: 2em;
+        }
+    }
 </style>
