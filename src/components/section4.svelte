@@ -5,7 +5,7 @@
 <section>
     <div class="content">
         <div class="image">
-            <img src="{getAsset("Produktbilder/PNG-fjernkontroller.png")}" alt="">
+            <img src="{getAsset("Produktbilder/PNG-fjernkontrolleren.png")}" alt="">
         </div>
         <div class="functionlist">
             <h1>
@@ -38,19 +38,23 @@
 
 <style>
     .image {
-        height: 100%;
+        height: 80%;
     }
     .image img {
+        max-height: 100%;
         width: 100%;
     }
+    .functionlist {
+        font-size: 1rem;
+    }
     .functionlist h1 {
-        font-size: 3rem;
-        margin: 0.5em 0;
+        font-size: 3em;
+        margin: 0 0 0.5em;
     }
     .point {
         display: flex;
         align-items: flex-start;
-        font-size: 2rem;
+        font-size: 2em;
     }
     .point img {
         width: 1em;
@@ -93,9 +97,26 @@
     img {
         width: 20%;
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 860px) {
         .content {
-            margin-top: 5vw;
+            margin-top: 4vh;
+        }
+        .functionlist {
+        font-size: 0.95rem;
+        }
+    }
+    @media screen and (max-width: 760px) {
+        .content {
+            flex-direction: column-reverse;
+        }
+        .image {
+            height: 20%;
+        }
+        .functionlist {
+            width: 100%;
+        }
+        .functionlist h1 {
+            font-size: 2em;
         }
     }
 </style>
