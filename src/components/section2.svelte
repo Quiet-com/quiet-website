@@ -3,10 +3,21 @@
     export let purchaseSection;
     import '@google/model-viewer';
     import getAsset from '../util/assets';
+    import 'vidstack/player/styles/default/theme.css';
+    import 'vidstack/player/styles/default/layouts/video.css';
+    // Register elements.
+    import 'vidstack/player';
+    import 'vidstack/player/layouts';
+    import 'vidstack/player/ui';
 </script>
 
 <section bind:this={demoSection}>
-    <model-viewer disable-tap camera-orbit="-155deg 55deg" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" src="{getAsset("3D/controller.glb")}"></model-viewer>
+    <div class="video">
+        <media-player title="Promovideo" src="{getAsset("Videoer/promo_video.webm")}">
+            <media-provider></media-provider>
+            <media-video-layout></media-video-layout>
+          </media-player>
+    </div>
     <div class="textbox">
         <h1>Meet Quiet.</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non luctus arcu. Maecenas quam tellus, bibendum eget magna at, eleifend vulputate erat. Cras pharetra volutpat odio et mattis. Pellentesque diam neque, mollis vitae neque vel, sagittis cursus sapien.</p>
@@ -21,8 +32,9 @@
     section {
         display: flex;
         z-index: 1;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
     .textbox {
         width: 45%;
@@ -34,12 +46,13 @@
         margin: 0;
         line-height: 1em;
     }
+    .video {
+        width: 45%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
     p {
         margin: 5% 0 5% 0;
-    }
-    model-viewer {
-        height: 100%;
-        width: 50%;
     }
     .button {
         width: 40%;
@@ -62,11 +75,11 @@
 
     @media screen and (max-width: 700px) {
         section {
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
         }
-        model-viewer {
-            height: 50%;
+        .video {
+            width: 80%;
         }
         .textbox {
             height: 50%;
@@ -77,5 +90,4 @@
             margin: 0;
         }
     }
-
 </style>

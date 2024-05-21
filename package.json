@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@google/model-viewer": "^3.5.0",
-    "three": "^0.164.1"
+    "three": "^0.164.1",
+    "vidstack": "^1.11.21"
   }
 }
