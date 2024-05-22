@@ -3,20 +3,12 @@
     export let purchaseSection;
     import '@google/model-viewer';
     import getAsset from '../util/assets';
-    import 'vidstack/player/styles/default/theme.css';
-    import 'vidstack/player/styles/default/layouts/video.css';
-    // Register elements.
-    import 'vidstack/player';
-    import 'vidstack/player/layouts';
-    import 'vidstack/player/ui';
+    import Video from './video.svelte';
 </script>
 
 <section bind:this={demoSection}>
     <div class="video">
-        <media-player title="Promovideo" src="{getAsset("Videoer/promo_video.webm")}">
-            <media-provider></media-provider>
-            <media-video-layout></media-video-layout>
-          </media-player>
+        <Video src={getAsset("Videoer/promo_video.webm")}/>
     </div>
     <div class="textbox">
         <h1>Meet Quiet.</h1>
