@@ -229,7 +229,7 @@
     img {
         width: 20%;
     }
-    @media screen and (max-width: 3000px){
+    @media screen and (max-width: 10000px){
         img {
             transform: translateX(0%);
         }
