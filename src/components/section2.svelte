@@ -12,7 +12,7 @@
     </div>
     <div class="textbox">
         <h1>Meet Quiet.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non luctus arcu. Maecenas quam tellus, bibendum eget magna at, eleifend vulputate erat. Cras pharetra volutpat odio et mattis. Pellentesque diam neque, mollis vitae neque vel, sagittis cursus sapien.</p>
+        <p>Experience the ultimate in noise control with the QUIET AIR PRO ULTRA MAX ADVANCED OBSIDIAN. Watch our video to see how you can effortlessly boost, lower, or mute the volume of your surroundings, creating your perfect sound environment.</p>
         <button class="button" on:click={purchaseSection.scrollIntoView({behavior: "smooth"})}>
             BUY NOW
         </button>

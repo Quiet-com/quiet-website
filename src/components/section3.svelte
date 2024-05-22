@@ -85,21 +85,21 @@
                 <img class="icon" src="{getAsset("icons/plus.png")}" alt="plus icon">
                 <div>
                     <h3>Volume +</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu massa ex. Nulla efficitur neque at turpis imperdiet aliquam. Integer ultricies lorem nec tristique dictum. Donec in posuere velit, eget lobortis lectus.</p>
+                    <p>Increases ambient volume of desired sounds while maintaining noise-cancellation for unwanted noise, enhancing clarity and audibility for specific conversations or audio sources within a controlled environment.</p>
                 </div>
             </div>
             <div class="point">
                 <img class = "icon" src="{getAsset("icons/minus.png")}" alt="plus icon">
                 <div>
                     <h3>Volume -</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu massa ex. Nulla efficitur neque at turpis imperdiet aliquam. Integer ultricies lorem nec tristique dictum. Donec in posuere velit, eget lobortis lectus.</p>
+                    <p>Reduces the ambient volume of external sounds, allowing for a quieter environment while maintaining necessary communication, effectively balancing noise cancellation with selective sound reduction.</p>
                 </div>
             </div>
             <div class="point">
                 <img class = "icon" src="{getAsset("icons/mute.png")}" alt="plus icon">
                 <div>
                     <h3>Mute</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu massa ex. Nulla efficitur neque at turpis imperdiet aliquam. Integer ultricies lorem nec tristique dictum. Donec in posuere velit, eget lobortis lectus.</p>
+                    <p>Completely silences all ambient sounds, providing total noise cancellation for an undisturbed and quiet experience, perfect for focus-intensive tasks or moments requiring absolute silence.</p>
                 </div>
             </div>
         </div>

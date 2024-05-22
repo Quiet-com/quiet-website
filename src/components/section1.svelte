@@ -15,7 +15,7 @@
             <h1>
                 Unlock your concentration with Quiet.
             </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet tellus cras adipiscing enim eu turpis. Velit laoreet id donec ultrices tincidunt arcu non.</p>
+            <p>Take control of your sound environment with the QUIET AIR PRO ULTRA MAX ADVANCED OBSIDIAN. Boost important conversations, lower background noise, or mute distractions entirely. Transform your work, study, or relaxation time into a seamless and focused experience. Unlock your concentration like never before.</p>
             <div class="email">
                 <input type="text" placeholder="Your email">
                 <button class="button" on:click={click}>
