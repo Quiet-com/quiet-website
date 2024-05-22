@@ -4,7 +4,7 @@
 
 <main>
     <a href=".">
-        <img src="{getAsset("QuietLogoIconWhite.svg")}" width=40vw id="logo" alt="Loggos">
+        <img src="{getAsset("SVG/QuietLogoIconWhite.svg")}" width=40vw id="logo" alt="Loggos">
     </a>
     <a href=".">
         <h1>Quiet.</h1>
