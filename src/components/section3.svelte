@@ -108,8 +108,8 @@
 
 <style>
     .icon {
-        width: 10px;
-        height: 10px;
+        max-width: 3vw;
+        max-height: 3vw;
     }
 
     .product-imgs {
@@ -187,31 +187,6 @@
         width: 90%;
     }
 
-    @media screen and (min-width: 860px){
-        img {
-            transform: translateX(0%);
-        }
-
-        .card {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1.5rem;
-        }
-        .card_wrapper {
-            max-height: 100vh;
-            max-width: 1100px;
-            transform: translateX(2.5%);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .product-imgs {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
 
     .functionlist {
         font-size: 1rem;
@@ -254,9 +229,43 @@
     img {
         width: 20%;
     }
-    @media screen and (max-width: 860px) {
+    @media screen and (max-width: 3000px){
+        img {
+            transform: translateX(0%);
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+        }
+        .card_wrapper {
+            max-height: 100vh;
+            max-width: 1100px;
+            transform: translateX(2.5%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-imgs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (max-width: 980px) {
+        .img-display {
+            max-width: 35vw;
+            max-height: 35vw;
+        }
+        button {
+
+            transform: translateX(60%);
+        }
         div {
-            transform: translateY(10%);
+            transform: translateY(0%);
         }
 
         .functionlist {
@@ -265,6 +274,7 @@
         .img-display {
             max-height:25vh;
             max-width:25vh;
+           transform: translateX(50%);
         }
         .img-select {
             flex-grow: 1;
@@ -274,14 +284,30 @@
             max-width:10vh;
             justify-self: center;
         }
-    }
-    @media screen and (max-width: 760px) {
+        .img-showcase {
+            transform: translateX(10%);
+        }
 
+        .img-showcase img{
+            flex-grow: 1;
+            justify-self: center !important;
+        }
+    }
+        
+    @media screen and (max-width: 738px) {
         .functionlist {
             width: 100%;
+            transform: translateY(55%) translateX(-30%);
         }
-        .functionlist h1 {
-            font-size: 2em;
+        .card {
+            transform: translateY(-75%) translateX(35%);
+            flex-grow: 1;
+            justify-self: center;
+            display: flex;
+        }
+        h1 {
+            text-align: center;
+            width: 100%;
         }
     }
 </style>
