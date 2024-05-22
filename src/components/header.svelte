@@ -1,15 +1,16 @@
 <script>
+    import getAsset from "../util/assets";
 </script>
 
 <main>
     <a href=".">
-        <img src="https://quiet-com.github.io/quiet-assets/SVG/QuietLogoIconWhite.svg" width=40vw id="logo" alt="Loggos">
+        <img src="{getAsset("SVG/QuietLogoIconWhite.svg")}" width=40vw id="logo" alt="Loggos">
     </a>
     <a href=".">
         <h1>Quiet.</h1>
     </a>
     <button class="menu">
-        <img src="https://quiet-com.github.io/quiet-assets/Hamburger.png" alt="Namnam Hamburger">
+        <img src="{getAsset("Hamburger.png")}" alt="Namnam Hamburger">
     </button>
     
 </main>
