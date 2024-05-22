@@ -8,7 +8,7 @@
     import 'vidstack/player/ui';
 </script>
 
-<media-player autoplay="true" title="Promovideo" src="{src}">
+<media-player autoplay="true" title="Promovideo" {src}>
     <media-provider></media-provider>
     <media-video-layout></media-video-layout>
 </media-player>
